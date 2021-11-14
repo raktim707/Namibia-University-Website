@@ -1,0 +1,38 @@
+{% extends 'front/base.html' %}
+
+{% block headblock %}
+<title>{{site.name}} | Gallery</title>
+{% endblock %}
+
+{% block mainblock %}
+
+<div class="container-fluid">
+    <!-- Gallery -->
+    <div class="row m-5">
+
+        {% for gpost in gposts %}
+
+        <style>
+            #c_{{ gpost.id }}:hover {
+                opacity: .8;
+                transition: 1s;
+            }
+        </style>
+        <div id="c_{{ gpost.id }}" class="col-sm-12 {{ gpost.CssClass }}">
+            {% if gpost.isImage %}
+            <img src="/media/{{ gpost.ImageOrVideo }}" alt="gpost.name" class="w-100 m-2">
+            {% else %}
+            <video src="/media/{{ gpost.ImageOrVideo }}" class="w-100 m-2" autoplay controls></video>
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+
+    </div>
+
+</div>
+<!-- Gallery -->
+</div>
+{% endblock mainblock %}
