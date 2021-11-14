@@ -89,7 +89,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #394263;
   font-size: 13px;
-  /*background-color: #222222;*/
+
   background-color: #1b2b5d;
 }
 
@@ -813,10 +813,10 @@ a.sidebar-title:focus {
   opacity: 0.5;
 }
 
-/* .sidebar-header-options {
-  float: right;
+.sidebar-header-options {
+  /*float: right;*/
   display: inline-block;
-} */
+}
 
 .sidebar-header-options > a,
 .sidebar-nav .sidebar-header-options a {
@@ -1253,8 +1253,8 @@ a.widget:active {
 }
 
 a.widget.widget-hover-effect1:hover {
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  /*-webkit-transform: translateY(-3px);
+  transform: translateY(-3px);*/
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -1442,6 +1442,11 @@ img.full-bg {
   margin: 25px -10px;
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark-blue {
+  background: #444444;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* Countdown */
@@ -2997,9 +3002,9 @@ fieldset[disabled] .btn-default.active:focus {
 }
 
 .btn-primary {
-  background-color: #6ad2eb;
-  border-color: #1bbae1;
-  color: #ffffff;
+  background-color: #1b2b5d;
+  border-color: white;
+  color: white;
 }
 
 .btn-primary.btn-alt {
